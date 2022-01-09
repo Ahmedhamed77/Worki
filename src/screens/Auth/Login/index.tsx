@@ -2,7 +2,12 @@ import React from 'react';
 
 import {styles} from './style';
 import {SafeAreaView} from 'react-native';
-import {CustomButton, CustomText, PressableCard} from '../../../shared';
+import {
+  CommonInput,
+  CustomButton,
+  CustomText,
+  PressableCard,
+} from '../../../shared';
 
 interface LoginScreenProps {}
 
@@ -13,6 +18,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = () => {
       <PressableCard>
         <CustomButton buttonTitle="welcome" />
       </PressableCard>
+      <CommonInput />
     </SafeAreaView>
   );
 };
